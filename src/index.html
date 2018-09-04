@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>susmitha kamepalli</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="susmitha kamepalli" />
+		
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/zoomwall.js"></script>
+		<script>
+			window.onload = function() {
+			zoomwall.create(document.getElementById('zoomwall'), true);
+		};
+		
+		$('.ribbon').on('click', function() {	
+		  var self = $(this),
+			  newone = self.clone(true);
+		  
+		  self.before(newone);
+		  $("." + self.attr("class") + ":last").remove();
+	});
+
+	
+var TRange=null
+function findString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (navigator.appName=="Netscape") {
+
+  // NAVIGATOR-SPECIFIC CODE
+
+  strFound=self.find(str);
+  if (!strFound) {
+   strFound=self.find(str,0,1)
+   while (self.find(str,0,1)) continue
+  }
+ }
+ if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false)
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange()
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+}
+
+
+
+		</script>
+	</head>
+<script>
+	jQuery(document).ready(function() {
+	var offset = 2500;
+	var duration = 3000;
+	jQuery(window).scroll(function() {
+	if (jQuery(this).scrollTop() > offset) {
+		jQuery('.back-to-top').fadeIn(duration);
+	} else {
+		jQuery('.back-to-top').fadeOut(duration);
+	}
+	});
+	&nbsp;
+	jQuery('.back-to-top').click(function(event) {
+	event.preventDefault();
+	jQuery('html, body').animate({scrollTop: 0}, duration);
+	return false;
+	})
+	});
+	
+jQuery(document).ready(function(){
+    var d = new Date();
+    var n = d.getHours();
+    if (n > 19 || n < 6)
+  // If time is after 7PM or before 6AM, apply night theme to ‘body’
+      document.body.className = "night";
+    else if (n > 16 && n < 19)
+      // If time is between 4PM – 7PM sunset theme to ‘body’
+      document.body.className = "sunset";
+    else
+      // Else use ‘day’ theme
+      document.body.className = "day";
+});	
+	
+</script>
+	<body oncontextmenu="return true;" id="bg">
+	 
+		<!-- Home -->
+		<section id="home" class="content">
+			<h2>Home</h2>
+			<b><h1 style="font-size:20px;color:#660033;">I am from India. I have completed my graduation from <b style="color:black;"><a href="http://www.srkrec.ac.in" target="_blank">S.R.K.R</a></b> Engg College, Andhra University with Bachelor of Engineering Degree in the field of <b style="color:black;">C</b>omputer <b style="color:black;">S</b>cience and <b style="color:black;">E</b>ngineering</h1></b><br/>
+			<p><b>Having Expereince in core java,servlets,JDBC,Jsp,stuts,spring MVC and hibernates more than 3 plus years</b> </p><br/></br>
+			<span style="font-size:18px;color:black;">
+				<strong><u>Summary:</u></strong>
+			</span></br></br>
+			<div>
+				<ul style="list-style: square inside url('images/smurf1.gif'); color:black;font-size:16px;font-weight:bold;">
+					<li>An ambitious and hardworking Software Developer with excellent knowledge and experience on JAVA and web Technologies. Quick learner of new technologies and has good technical, analytical and problem solving skills. Seeking a challenging position within an organization which provides ample opportunities to learn and contribute.
+						Overall 3+years of IT experience in various phases of Software Development Life Cycle including Requirement gathering, Analysis, Design & Development, Maintenance and Testing</li>
+				</ul>
+			</div><br/>
+			<span style="font-size:18px;color:black;">
+				<strong><u>Technical Skills:</u></strong>
+			</span></br><br/>
+			<div>
+				<ul style="list-style: square inside url('images/smurf.gif'); color:black;font-size:16px;font-weight:bold;">
+				<table border="4" cellpadding="0" cellspacing="0" style="width:100%;font-weight:bold;color:black;" width="900">
+					<tbody>		
+					<tr><td style="width:400px"><li>Programming Languages</td><td>Java</li></td></tr>
+					<tr><td><li>Java EE Technologies</td><td>       Servlets, JSP, EJB, JMS , JTA , JNDI, RMI, JDBC</li></td></tr> 
+					<tr><td ><li>Application Server</td><td>          Oracle Web Logic Server 11g</li></td></tr>
+					<tr><td ><li>Web Server</td><td>                  Apache-Tomcat 7.0 and 8.0, IBM web sphere.</li></td></tr>
+					<tr><td ><li>Databases</td><td> 			       MySQL, Oracle 10g & 11g, SQL Server 2012.</li></td></tr>
+					<tr><td ><li>Web Technologies</td><td>          HTML, CSS, XML, XSLT, JSP, Java Script, JQuery</li></td></tr>
+			    	<tr><td ><li>Web Services</td><td>               SOAP, REST</li></td></tr>
+					<tr><td ><li>Build Tools</td><td>                 Apache Ant, Maven,Gradle</li></td></tr>
+					<tr><td ><li>Repository Tools</td><td>          SVN, Git</li></td></tr>
+					<tr><td ><li>Testing Tools</td><td>               Junit</li>
+					<tr><td ><li>Document Software</td><td>          MS Office 2010& 2013, Open Office</li></td></tr>
+					<tr><td ><li>Operating System</td><td>           Windows</li></td></tr>
+					<tr><td ><li>Special Software</td><td>           DB2 client, Serena Dimensions, SonarLint, HP Performance Management tool, Core FTP, Parasoft Testing Tools ( JTest ), VuGen</li></td></tr>
+					<tr><td ><li>Frame Works</td><td>                 spring 3.0 [MVC, core, boot, JDBC and security], Hibernate 3.0, Struts 2.0</li></td></tr>
+					<tr><td ><li>Other Tools</td><td>                 Eclipse IDE, Adobe Dreamweaver, STS 3.5.1, SSMS</li></td></tr>
+					<tbody>
+					</table>
+				</ul>
+			</div>
+		</section>
+		<!-- /Home -->
+		
+		<!-- Portfolio -->
+		<section id="Resume" class="panel">
+			<div class="content">
+				<h2>Resume</h2>
+				<center><h3 style ="color:black;font-size:20px;">Resume Pdf</h3></center>
+				<center><a href="images/susmitha.pdf" target="_blank"><img style ="width:90px;height:90px;"src="images/pdf.png" title="Resume Pdf"/></a>
+				<table border="4" cellpadding="0" cellspacing="0" style="width:623px;font-weight:bold;color:black;" width="468">
+					<tbody>
+						<tr>
+							<td style="width:343px;height:51px;">
+							<h3> Susmitha Kamepalli</h3></br>
+								<h3>
+									241,Welford House&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></br>
+								<h3>
+									Waxlow Way, Northolt</h3></br>
+								
+							</td>
+							<td style="width:280px;height:51px;">
+								<h3><strong>Email</strong>:
+							 <a href="mailto:susmithakamepalli62@gmail.com">susmithakamepalli62@gmail.com</a></h3></br>
+								<h3><strong>Phone</strong>:
+								 07818621576</h3></br>
+									<h3>
+									<strong>Website</strong>: <a href="http://susmithak.com" target="_blank">susmithak.com</a></h3></br>
+									<h3><strong>Linkedin</strong>:
+									<a href="https://www.linkedin.com/in/susmitha-kamepalli-530a2a12b/" target="_blank">www.linkedin.com/in/susmitha-kamepalli</a></h3>
+							</td>
+						</tr>
+					</tbody>
+			</table>
+		</center><br/>
+		<span style="font-size:20px;color:black;">
+				<strong><u>SUMMARY:</u></strong>
+			</span></br></br>
+			<span style="font-size:18px;color:black;">An ambitious and hardworking Software Developer with excellent knowledge and experience on JAVA and web Technologies. Quick learner of new technologies and has good technical, analytical and problem solving skills. Seeking a challenging position within an organization which provides ample opportunities to learn and contribute.
+			Overall 3+years of IT experience in various phases of Software Development Life Cycle including Requirement gathering, Analysis, Design & Development, Maintenance and Testing.</span><br/><br/>
+			<span style="font-size:20px;color:black;">
+				<strong><u>TECHNICAL SKILLS:</u></strong>
+			</span></br></br>
+			<ul style="list-style: square inside url('images/dp.gif'); color:black;font-size:18px;">
+				    <table border="4" cellpadding="0" cellspacing="0" style="width:100%;font-weight:bold;color:black;" width="900">
+					<tbody>		
+					<tr><td style="width:400px"><li>Programming Languages</td><td>Java</li></td></tr>
+					<tr><td><li>Java EE Technologies</td><td>       Servlets, JSP, EJB , JMS , JTA , JNDI, RMI, JDBC</li></td></tr> 
+					<tr><td ><li>Application Server</td><td>          Oracle Web Logic Server 11g</li></td></tr>
+					<tr><td ><li>Web Server</td><td>                  Apache-Tomcat 7.0 and 8.0, IBM web sphere.</li></td></tr>
+					<tr><td ><li>Databases</td><td> 			       MySQL, Oracle 10g & 11g, SQL Server 2012.</li></td></tr>
+					<tr><td ><li>Web Technologies</td><td>          HTML, CSS, XML, XSLT, JSP, Java Script, JQuery</li></td></tr>
+			    	<tr><td ><li>Web Services</td><td>               SOAP, REST</li></td></tr>
+					<tr><td ><li>Build Tools</td><td>                 Apache Ant, Maven,Gradle</li></td></tr>
+					<tr><td ><li>Repository Tools</td><td>          SVN, Git</li></td></tr>
+					<tr><td ><li>Testing Tools</td><td>               Junit</li>
+					<tr><td ><li>Document Software</td><td>          MS Office 2010& 2013, Open Office</li></td></tr>
+					<tr><td ><li>Operating System</td><td>           Windows</li></td></tr>
+					<tr><td ><li>Special Software</td><td>           DB2 client, Serena Dimensions, SonarLint, HP Performance Management tool, Core FTP, Parasoft Testing Tools ( JTest ), VuGen</li></td></tr>
+					<tr><td ><li>Frame Works</td><td>                 spring 3.0 [MVC, core, boot, JDBC and security], Hibernate 3.0, Struts 2.0</li></td></tr>
+					<tr><td ><li>Other Tools</td><td>                 Eclipse IDE, Adobe Dreamweaver, STS 3.5.1, SSMS</li></td></tr>
+					<tbody>
+					</table>
+			</ul><br/><br/>
+			
+			<span style="font-size:20px;color:black;">
+				<strong><u>PROFESSIONAL SUMMARY:</u></strong>
+			</span></br></br>
+			<ul color:black;font-size:18px;">
+				<li>➲  Experience in<b> Waterfall Model  and agile </b>methodology involving Analysis and Development of applications in Java EE.  </li>
+				<li>➲  Proficient in develop web applications using <b>Java, spring 3.0, Struts 2.</b> </li>
+				<li>➲  Exposure on implementing RESTful web services using<b> spring.</b>  </li>
+				<li>➲  Expert in writing HQL and Criteria queries using<b> Hibernate</b>  and JPA.</b> </li>
+				<li>➲  Experience in produce and consume <b>SOAP</b>  web services using <b>Apache Axis</b>  and <b>Apache CXF.</b>  </li>
+				<li>➲  Experience in using <b>JSON, JQuery, JavaScript, Bootstrap, CSS, HTML and XML.</b> </li>
+				<li>➲  Experience in writing performance test cases using<b> HP Performance Management tool.</b>  </li>
+				<li>➲  Good Knowledge in Software design patterns such as<b> MVC, Intercepting Filter, Front Controller, Application Controller, Data Transfer Object etc.</b> </li>
+				<li>➲  Strong problem solving and troubleshooting skills. Ability to effectively understand the design, modify the code, perform peer reviews.</li>
+				<li>➲  Ability and Enthusiasm to learn new Tools/Technologies Quickly and implement independently.  </li>
+				<li>➲  Exposure to AWS, developed a personal website and hosted it on the<b>  AWS</b> </li>
+			</ul><br/><br/>
+			
+			<span style="font-size:20px;color:black;">
+				<strong><u>PROFESSIONAL ACCOMPLISHMENTS:</u></strong>
+			</span></br></br>
+			<ul style="list-style: square inside url('images/smurf1.gif'); color:black;font-size:18px;">
+				<li>ORACLE Certified Professional <b>JAVA SE6</b> Programmer.</li>
+				<li>Got an overall score of 85 in <b>IKM</b> java 8 programming.</li>
+			</ul><br/><br/>
+				<span style="font-size:20px;color:black;">
+					<strong><u>PROFESSIONAL EXPERIENCE:</u></strong>
+				</span></br><br/>
+				<span style="font-size:18px;color:black;">
+					<strong><b>TATA CONSULTANCY SERVICES</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; June2015- March 2018</strong>
+				    </br><strong><b>**************************** </b></strong>
+				</span></br><br/>
+				<span style="font-size:18px;color:black;">
+					<strong><u>Project#1 </u></strong>
+				</span></br><br/>
+				<table border="0" cellpadding="0" cellspacing="0" style="width:100%;color:black;" width="900">
+					<tbody>		
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Project</td><td>GPOP-Supplier Ship Direct</td></tr>
+					
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Role</td><td>Developer</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Client</td><td>FCA (Fiat Chrysler Automobiles), USA</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:50px;font-weight:bold;">Environment</td><td>J2EE, J2SE, OOP, STS 3.5.1, WAMP server, Apache Tomcat, Spring MVC, REST, XML, SVN, SSMS, SQL server 2012, JSP, JSON, JQuery, JavaScript, HTML 5, CSS 3,Ajax, Maven, ANT, windows.</td></tr></td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:100px;font-weight:bold;">Description</td><td>The SSD (Supplier Ship Direct) system handles the maintenance, tracking, reporting and payment of production part orders sent directly from the supplier to the dealer. The purpose of the SSD system is to allow order fulfillment by an outside supplier, rather than a Chrysler Parts Distribution Center (PDC).  Orders originate via Dealer CONNECT, GPOP CICS, or batch input to Order Processing and then sent to the SSD system where a release is formatted and sent to the Supplier.  The Supplier will send Chrysler an Advance Shipping Notices (ASN) indicating the shipment has occurred or an Order Status Update indicating the status of the shipment (backorder/cancellation).  The SSD system will track the order and generate receipts to Accounts Payable and billing information to the GPOP Invoicing systems.  </td></tr>
+					</tbody>
+					</table>
+					<span style="font-size:18px;color:black;">
+				<strong>Roles & Responsibilities :</strong>
+			</span></br></br>
+					<ul color:black;font-size:18px;">
+				<li>●  Developing web based applications, that handles the maintenance, tracking, reporting and payment of production part orders sent directly from the supplier to the dealer</li>
+				<li>●  Designed and developed the UI using HTML, AJAX, JQuery, CSS and JSP.</li>
+				<li>●  Using light weighted frameworks such as spring MVC and spring core. </li>
+				<li>●  Involved in the development of data access layer using Spring DAO.</li>
+				<li>●  Associate with Architect for developing the Use-Case, System, Class and Activity Diagrams of the application. </li>
+				<li>●  Working experience in waterfall methodology.</li>
+				<li>●  Participating in client meetings and providing status of project by attending weekly status call. </li>
+			</ul><br/><br/>
+				
+				<span style="font-size:18px;color:black;">
+					<strong><u>Project#2</u> </strong>
+				</span></br><br/>
+				<table border="0" cellpadding="0" cellspacing="0" style="width:100%;color:black;" width="900">
+					<tbody>		
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Project</td><td>GPOP-Promotional Matrix system</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Role</td><td>Developer</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Client</td><td>FCA (Fiat Chrysler Automobiles), USA</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:50px;font-weight:bold;">Environment</td><td>J2EE, J2SE, OOP, STS 3.5.1, WAMP server, Apache Tomcat, Struts2.0,REST, XML, SVN, Tortoise SVN, SQL server 2012, SSMS, JSP, JSON, JQuery, JavaScript, HTML 5, CSS 3, Maven, ANT, windows.</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:100px;font-weight:bold;">Description</td><td>The Promotion Build system is used to build, approve and concur promotion rules which are used to determine whether a promotion parts order qualifies for a current promotion when an order is entered  </td></tr>
+					</tbody>
+					</table>
+				</br><br/>
+				<span style="font-size:18px;color:black;">
+				<strong>Roles & Responsibilities :</strong>
+			</span></br></br>
+					<ul color:black;font-size:18px;">
+				<li>●  Developed a new software components, applications and functionalists to existing systems. </li>
+				<li>●  Created reusable code wherever required.</li>
+				<li>●  Worked with frameworks such as struts 2.0. </li>
+				<li>●  Captured the requirements of the project and implemented complex solutions for those requirements</li>
+				<li>●  Deploying & testing the application on WebSphere. </li>
+				<li>●  Code quality should be tested by Parasoft jtest plugin.</li>
+				<li>●  The code should not contain any severity 1,2,3 issues.</li>
+				<li>●  Worked very close to deadlines and within budget.</li>
+			</ul><br/><br/>
+				
+				<span style="font-size:18px;color:black;">
+					<strong><u>Project#3</u> </strong>
+				</span></br><br/>
+				<table border="0" cellpadding="0" cellspacing="0" style="width:100%;color:black;" width="900">
+					<tbody>		
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Project</td><td>GWSSHP(Global Warehouse System shipping process) system</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Role</td><td>Developer</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Client</td><td>FCA (Fiat Chrysler Automobiles), USA</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:50px;font-weight:bold;">Environment</td><td>J2EE, J2SE, STS 3.5.1, WAMP server, Apache Tomcat, Struts 2.0,Hibernate 3.0, REST, XML, SVN, SQL server 2012, SSMS, JSP, JSON, JQuery, JavaScript, HTML 5, CSS 3, Maven, ANT, windows.</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:100px;font-weight:bold;">Description</td><td>GWS is a system that controls and monitors the shipment of productive and non-productive material between Mopar locations to Mopar locations, 3PP, consignment suppliers and consolidators.</td></tr>
+					</tbody>
+					</table>
+				</br><br/>
+				<span style="font-size:18px;color:black;">
+				<strong>Roles & Responsibilities :</strong>
+			</span></br></br>
+					<ul color:black;font-size:18px;>
+				<li>●  Analysis of Business Requirements and Technical Requirements. </li>
+				<li>●  Involved in implementing common framework includes JSON Schema validation, error handling and logging to support multiple applications</li>
+				<li>●  Produced high quality code which meet the requirements of the project and also the code is testable and can be maintained by others. </li>
+				<li>●  Developed layouts using Tiles integration with struts.</li>
+				<li>●  Developed efficient HQL queries to improve the performance of the application. </li>
+				<li>●  Worked very close to deadlines and within budget.</li>
+							</ul><br/><br/>
+				<span style="font-size:18px;color:black;">
+					<strong><u>Project#4 </u></strong>
+				</span></br><br/>
+				<table border="0" cellpadding="0" cellspacing="0" style="width:100%;color:black;" width="900">
+					<tbody>		
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Project</td><td>GPRC (Global Product Regulatory Compliance)</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Role</td><td>Developer</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Client</td><td>FCA (Fiat Chrysler Automobiles), USA</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:50px;font-weight:bold;">Environment</td><td> JJ2EE, J2SE, STS 3.5.1, WAMP server, Apache Tomcat, Spring MVC,,REST, XML, SVN,SQL server 2012, SSMS, JSP, JSON, JQuery, JavaScript, HTML 5, CSS 3, Maven, ANT, windows.</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:100px;font-weight:bold;">Description</td><td>The Global Product Regulatory Compliance is a web application which was developed to Maintain Regulatory Compliance data within the Chrysler System. This application provides a web interface for the users to view and update the regulatory attribute data related to a part. It provides functionality for viewing, updating, and bulk import and bulk export of regulatory data elements.</td></tr>
+					</tbody>
+					</table>
+				</br><br/>
+				<span style="font-size:18px;color:black;">
+				<strong>Roles & Responsibilities :</strong>
+			</span></br></br>
+					<ul color:black;font-size:18px;">
+				<li>●  Developed a web application to maintain regulatory compliance data about part within Chrysler system </li>
+				<li>●  Implemented  view, update, bulk import and bulk export functionality.</li>
+				<li>●  Added some additional fields based on client requirements. </li>
+				<li>●  Created reusable code wherever required</li>
+				<li>●  Developed a new software components, applications and functionalists to existing systems. </li>
+				<li>●  Involved in documentation which includes preparing requirement document, estimation and approach document for change request.</li>
+				<li>●  Deploying & testing the application on WebSphere. </li>
+				
+			</ul><br/><br/>
+			
+      			<span style="font-size:18px;color:black;">
+					<strong><b>TOLLPLUS INDIA PVT.LTD</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May2014 – May 2015</strong>
+				</br><strong><b>**********************</b></strong>
+				</span></br><br/>
+				
+				<table border="0" cellpadding="0" cellspacing="0" style="width:100%;color:black;" width="900">
+					<tbody>		
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Project</td><td>OMP (Online Medicine Purchase).</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:30px;font-weight:bold;">Role</td><td>Internship</td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:50px;font-weight:bold;">Environment</td><td>Servlets, JSP, JDBC    DBMS: Oracle 11g </td></tr>
+					<tr><td style="font-size:18px;color:black;width:400px;height:100px;font-weight:bold;">Description</td><td>The OMP (online medicine purchase) system deals with medicines. The main aim of the project is to supply required medicines to the users. Here the advantage is the customer need not to go for the medical shop to buy medicines.
+                The registered user can give money when he receives the medicines (cash on delivery). The administrator is responsible to receive money and transfer medicines to the users. The administrator is responsible to post the current available medicines on the online medicine system and need to update the information. The user also gives suggestions to the online medicine system about the newly available best medicines in the market. This online medicine system provides best medicines to the users and help to cure diseases.</td></tr>
+					</tbody>
+					</table>
+				</span></br><br/>
+				<span style="font-size:18px;color:black;">
+				<strong><u>Roles & Responsibilities :</u></strong>
+			</span></br></br>
+					<ul color:black;font-size:18px;">
+				<li>●  Designed and developed the UI using HTML and  CSS  </li>
+				<li>●  Built UI components using Jsp, JSTL, Custom tags, and Jsp tags.</li>
+				<li>●  Implemented front end validation using JavaScript.</li>
+				
+			</ul><br/><br/>
+				
+				<span style="font-size:20px;color:black;">
+				<strong><u>Education Qualification:</u></strong>
+			</span></br></br>
+			<ul color:black;font-size:18px;>
+				<li>●  Graduate in Computer Science and Engineering (2011-2015) with 8.5 CGPA under Andhra University from S.R.K.R Engineering College.</li>
+				<li>●  Intermediate from Board of intermediate with 96.1 %.</li>
+				<li>●  S.S.C from Board of Secondary Education with 89%.</li>
+			</ul></br><br/>
+			<ul color:black;font-size:18px>
+					<li><b>Visa Status</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 	: Tier 2 General Dependent (No need of sponsorship)</li>
+					<li><b>Reference</b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;: Available on rquest</li>
+					</ul></br></br>
+			</div>
+		</section>
+			
+		<!-- /Portfolio -->
+		
+		<!-- Contact -->
+		<section id="contact" class="panel">
+			<div class="content">
+			
+				<h2>Contact</h2>
+				<!--<div id="google-map" data-latitude="16.583875" data-longitude="81.385824" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
+				<ul style="list-style:square inside url('images/dp.gif');color:black;font-size:20px;">
+					<li><i class="fa fa-map-marker"></i> <span> Address:</span> 241, Welford House,Waxlow way,Northlot.</li>
+					<li><i class="fa fa-phone"></i> <span> Phone:</span> 07818621576  </li>
+					<li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:susmithakamepalli62@gmail.com"> susmithakamepalli62@gmail.com</a></li>
+					<li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">susmithak.com</a></li>
+				 </ul><br/>
+				 <figure class=" ">
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1297836724198!2d-0.3794827844691199!3d51.52917936693193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766d4cb46ac811%3A0xb2b26f7d58c2a77d!2sNortholt+UB5+6FW!5e0!3m2!1sen!2suk!4v1527615138614" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </figure >
+				<center> <h3 style ="font-family:Helvetica, Arial, sans-serif;font-size:40px;color:black;">Send feedback</h3></center>
+				 <form action="MAILTO:susmithakamepalli@gmail.com" method="post" enctype="text/plain" class="dark-matter">
+						<h1>Contact Form</h1>
+						<label>
+							<span>Your Name :</span>
+							<input id="name" type="text" name="name" placeholder="Your Full Name" required>
+						</label>
+					   
+						<label>
+							<span>Your Email :</span>
+							<input id="email" type="email" name="email" placeholder="Valid Email Address" required>
+						</label>
+					   
+						<label>
+							<span>Message :</span>
+							<textarea id="message" name="message" placeholder="Your Message to Me" required ></textarea>
+						</label>
+						 <label>
+							<span>&nbsp;</span>
+							<input type="submit" class="button" value="Send" />
+						</label> 
+						<label>
+							<span>&nbsp;</span>
+							<input type="reset" class="button" value="Reset" />
+						</label> 	
+				</form>
+		</section>
+		
+		<!-- /Contact -->
+		
+		<!-- Header with Navigation -->
+		<div id="header">
+			<div id="footer">
+				<div class="social-icons">
+					  <ul>
+						<li><a class="envelope" href="mailto:susmithakamepalli62@gmail.com" title="Gmail"target="_blank"><i class="fa fa-envelope"></i></a></li> 
+						<li><a class="facebook" href="https://www.facebook.com/susmitha.kamepalli" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="linkedin" href="https://www.linkedin.com/in/susmitha-kamepalli-530a2a12b/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<center><div id="ajay">SUSMITHA KAMEPALLI</div></center>
+			<!-- images swicthing -->
+			<div style="color:black"><b>Click  To Change Background of home page</b></div>
+			<div id="menu"><img src="images/bgclick.png"></div>
+				<div id="thumb">
+					<ul style="list-style:none; margin:0; padding:0;">
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/t.jpeg" width="85" height="82" dir="images/t.jpeg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/u.jpg" width="85" height="82" dir="images/u.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/v.jpg" width="85" height="82" dir="images/v.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/w.jpg" width="85" height="82" dir="images/w.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/x.jpg" width="85" height="82" dir="images/x.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/y.jpg" width="85" height="82" dir="images/y.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/r.jpg" width="85" height="82" dir="images/r.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/s.jpg" width="85" height="82" dir="images/s.jpg"></li>
+						<li style="float:right; padding:5px;border:solid #666 0;cursor: pointer;"><img src="images/z.jpg" width="85" height="82" dir="images/z.jpg"></li>
+					</ul>
+				</div>
+			<!--clock-->
+			<div style="float:right;margin-right:50px;margin-top:5px;">
+				<iframe src="http://free.timeanddate.com/clock/i69ezoqr/n136/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff" frameborder="0" width="110" height="110"></iframe>
+
+			</div>
+			<!--clock -->
+			
+			
+
+			<a href="http://susmithak.com/"><img style="width:125px;height:150px; border-radius: 25px;background:#000;border: 4px solid black;box-shadow:3px 3px 3px #222;margin-left:40px;" src="images/susmitha.png" alt="susmitha" /></a>
+			
+			<ul id="navigation">
+				<li><a id="link-home" href="#home">Home</a></li>
+				<li><a id="link-portfolio" href="#Resume">Resume</a></li>
+				<li><a id="link-contact" href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<a href="#" class="back-to-top" style="display: inline;">
+			<i class="fa fa-arrow-circle-up"></i>
+		</a>
+		
+	<script src="js/classie.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+			
+	new Photostack( document.getElementById( 'photostack-2' ), {
+		callback : function( item ) {
+			//console.log(item)
+		}
+	});
+	
+</script>
+	</body>
+</html>
